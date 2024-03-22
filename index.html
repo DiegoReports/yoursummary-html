@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./App.css">
+
+  <title>Your Summary</title>
+</head>
+
+<body>
+  <script src="./index.js"></script>
+  <div class="App">
+    <div class="sideBar">
+      <div class="upperside">
+        <div class="upperSideTop"><img src="./assets/robotlogo.svg" alt="Logo" class="logo" /><span class="brand">Your
+            Summary</span></div>
+        <button class="midBtn"><img src="./assets/add-30.png" alt="Novo Chat" class="addBtn" />New chat</button>
+        <div class="upperSideBottom">
+          <button class="query"><img src="./assets/message.svg" alt="Icone de mensagem" />Crie um resumo de um
+            filme</button>
+          <button class="query"><img src="./assets/message.svg" alt="Icone de mensagem" />Crie um resumo para uma
+            reunião de negocios</button>
+        </div>
+
+      </div>
+      <div class="lowerSide">
+        <div class="listitems"><img src="./assets/home.svg" alt="Inicio" class="listitemsImg" />Home</div>
+        <div class="listitems"><img src="./assets/bookmark.svg" alt="Salvos" class="listitemsImg" />Salvos</div>
+        <div class="listitems"><img src="./assets/rocket.svg" alt="Plano Pro" class="listitemsImg" />Use o Plano
+          Pro</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="chats" id="chats">
+        <div class="chat">
+          <img class="chatImg" src="./assets/user-icon.png" alt="" />
+          <p class="text">Esse é um texto exemplo gerado automaticamente para este projeto.</p>
+        </div>
+
+        <div class="chat bot">
+          <img class="chatImg" src="./assets/robotlogo.svg" alt="" />
+          <p class="text">Esse é um texto exemplo gerado automaticamente para este projeto.</p>
+        </div>
+
+      </div>
+
+      <div class="chatFooter">
+        <div class="inp">
+          <input type="text" name="" id="user-input" placeholder="Enviar comando" />
+          <button class="send" id="send" onclick="getChatResponse()"><img src="./assets/send.svg"
+              alt="Botão enviar" /></button>
+        </div>
+        <p>YourSummary é um produto teste desenvolvido para criar resumos. YourSummary 1.0 March 24 Version</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
